@@ -316,10 +316,10 @@ async def start(bot: Client, m: Message):
                     caption="**Mʏ Nᴀᴍᴇ [ Ecourse Trusted DRM 🦋](https://t.me/Ecourse_Trusted)\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/ET_Karva) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
                     reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/ET_Karva")
+        InlineKeyboardButton("Contact To Get Subscription", url="https://t.me/ET_Karva")
     ],
     [
-        InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="https://t.me/ET_Karva"),
+        InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", url="https://t.me/ET_Karva"),
         InlineKeyboardButton(" Official Channel 🦋", url="https://t.me/+eC5BHJojTIY0ZmNl")
     ]
 ])
@@ -342,10 +342,10 @@ async def start(bot: Client, m: Message):
                 caption=f"**Mʏ ᴄᴏᴍᴍᴀɴᴅꜱ ғᴏʀ ʏᴏᴜ [{m.from_user.first_name} ](tg://settings)**\n\n{commands_list}",
                 reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/ET_Karva")
+        InlineKeyboardButton("Contact To Get Subscription", url="https://t.me/ET_Karva")
     ],
     [
-        InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="https://t.me/ET_Karva"),
+        InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", url="https://t.me/ET_Karva"),
         InlineKeyboardButton("ᴅᴇᴛᴀɪʟꜱ 🦋", url="https://t.me/+eC5BHJojTIY0ZmNl")
     ]])
 )
@@ -370,7 +370,7 @@ auth_filter = filters.create(auth_check_filter)
 @bot.on_message(~auth_filter & filters.private & filters.command)
 async def unauthorized_handler(client, message: Message):
     await message.reply(
-        "<b>Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/DRM_Wizardbot)</b>\n\n"
+        "<b>Mʏ Nᴀᴍᴇ [DRM Bot🦋](https://t.me/ET_Karva)</b>\n\n"
         "<blockquote>You need to have an active subscription to use this bot.\n"
         "Please contact admin to get premium access.</blockquote>",
         reply_markup=InlineKeyboardMarkup([[
